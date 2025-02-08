@@ -50,6 +50,7 @@ We monitored real-time training metrics using Weights & Biases.
 <p align="center">
   <img width=80% src="assets/images/sample_plot.png">
 </p>
+The plot illustrates the model's classification performance, showcasing evaluation metrics such as AUC, accuracy, or loss trends over multiple training epochs.
 
 ## Future Work
 - Enhancing performance through **ensemble models**.
