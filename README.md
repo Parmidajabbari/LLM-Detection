@@ -5,7 +5,7 @@ LLM Detection is a machine learning-based project that aims to detect AI-generat
 
 ## Team Members
 - **Mobin Nesari**
-- **Parmida Jabbari**
+- **Parmida Jabari**
 
 ### Supervisors:
 - **Hadi Farahani**
@@ -30,8 +30,14 @@ To improve model performance, two additional datasets were incorporated:
 ## Model Architecture
 We utilize **DeBERTaV3**, an advanced version of BERT, which improves language understanding through:
 - **Disentangled attention**: Captures better contextual relationships between words.
-- **Pre-trained embeddings**: Fined-tuned on AI-generated text.
+- **Pre-trained embeddings**: Fine-tuned on AI-generated text.
 - **Binary classification head**: Outputs the probability of text being AI-generated.
+
+### Model Visualization
+<p align="center">
+  <img width=80% src="assets/images/model_architecture.png">
+</p>
+<p align="center"><em>Figure 1: The architecture of the DeBERTaV3-based LLM detection model.</em></p>
 
 ### Training Setup
 - **Loss function**: Binary Cross-Entropy with label smoothing (0.02)
@@ -50,7 +56,7 @@ We monitored real-time training metrics using Weights & Biases.
 <p align="center">
   <img width=80% src="assets/images/sample_plot.png">
 </p>
-The plot illustrates the model's classification performance, showcasing evaluation metrics such as AUC, accuracy, or loss trends over multiple training epochs.
+<p align="center"><em>Figure 2: The plot illustrates the model's classification performance, showcasing evaluation metrics such as AUC, accuracy, or loss trends over multiple training epochs.</em></p>
 
 ## Future Work
 - Enhancing performance through **ensemble models**.
@@ -65,7 +71,6 @@ Find the full implementation and dataset processing code in the repository:
 To run the project, install the required dependencies:
 ```sh
 pip install transformers datasets torch numpy pandas scikit-learn matplotlib wandb
-```
 
 ## License
 This project is licensed under the MIT License.
